@@ -3,10 +3,11 @@ import { useParams } from "react-router";
 
 const Country = (props) => {
     let { cName } = useParams();
+    let { countryData } = props.countries;
     return (
             <div>
                 <div>Country: {cName}</div> 
-                <div>Confirmed cases: {props.length}</div>
+                <div>Confirmed cases: </div>
             </div>
     )
 };
