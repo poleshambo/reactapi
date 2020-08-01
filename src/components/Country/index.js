@@ -4,10 +4,10 @@ import { useParams } from "react-router";
 const Country = (props) => {
     let { cName } = useParams();
     return (
-            <li>
-                <div>Country: {props.countries.cName}</div> 
-                {/* <div>Confirmed cases: {props.countries.id.confirmed}</div> */}
-            </li>
+            <div>
+                <div>Country: {cName}</div> 
+                <div>Confirmed cases: {props.length}</div>
+            </div>
     )
 };
 
